@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/music.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sound Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="tit">MY MUSIC PLAYER</h1>
+      <div class="container">
+        <h2 id="title">THUNDER</h2>
+        <h3 id="artist">Imagine Dragons</h3>
+        <div class="img_cont">
+          <img src="images/thunder.jpg" alt="" />
+        </div>
+        <audio src="songs/Thunder.mp3"></audio>
+        <!--Progress Bar-->
+        <div class="p_container" id="p_container">
+          <div class="duration_meter">
+            <div id="c_time">0:00</div>
+            <div id="t_time">1:00</div>
+          </div>
+          <div class="progress_div" id="progress_div">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <!--Controls-->
+        <div class="m_controls">
+          <i class="fas fa-backward" id="prev" title="Previous"></i>
+          <i class="fa fa-play btn" id="play" title="Play"></i>
+          <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
